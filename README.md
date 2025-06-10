@@ -42,17 +42,17 @@ If you don't want to train the classifier from scratch, you can make the use of 
 ### Method 2 : Build from scratch
 Clone this repository using-
 ```
-git clone https://github.com/gitshanks/fer2013.git
+git clone https://github.com/SharathTejavat/ML_Projects
 ```
 Download and extract the dataset from Kaggle link above.
 
-Run the `preprocessing.py` file, which would generate `fadataX.npy` and `flabels.npy` files for you.
+Run the `real.py` file, which would generate `fadataX.npy` and `flabels.npy` files for you.
 
 Run the `fertrain.py` file,  this would take sometime depending on your processor and gpu. Took around 1 hour for with an Intel Core i7-7700K 4.20GHz processor and an Nvidia GeForce GTX 1060 6GB gpu, with tensorflow running on gpu support. This would create `modXtest.npy`, `modytest,npy`, `fer.json` and `fer.h5` file for you.
 
 ## Running the tests (Optional)
 
-You can test the accuracy of trained classifier using `modXtest.npy` and `modytest.npy` by running `fertest.py` file. This would give youy the accuracy in % of the recently trained classifier.
+You can test the accuracy of trained classifier. This would give youy the accuracy in % of the recently trained classifier.
 
 ## Getting the Confusion Matrix (Optional)
 
